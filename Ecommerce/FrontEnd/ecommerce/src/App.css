@@ -1,0 +1,133 @@
+.App{
+background-color: #0b1335
+}
+.navbar-custom{
+  height: 100px;
+  background-color:#3d6a8b
+} 
+.Link{
+  color:azure;
+}
+#tbl td{
+ color:#319ce4;
+ font-weight: bold;
+ 
+}
+.items
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-items
+{
+  margin: 10px;
+}
+
+.icon
+{
+  height:40px ;
+  width:40px ;
+}
+
+.link,Link
+{
+  color: rgba(15, 24, 26, 0.979);
+ 
+ 
+}
+p{
+  color: aliceblue;
+}
+
+
+.login .card{
+  background-color:	#3d6a8b;
+  margin-top: 200px;
+  margin-left: 400px;
+  width:500px;
+  
+  
+}
+
+
+
+.adminAddPrd .card{
+  background-color:	#19496b;
+  
+}
+.addprd
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:750px;
+  margin-left:350px;
+
+
+}
+.login 
+{
+  margin-top:80px;
+}
+
+
+.signup
+{
+  margin-top:80px;
+}
+.signup .card{
+    background-color:	#3d6a8b;
+}
+
+.information
+{
+  margin-top:280px;
+  
+}
+
+
+
+Table .adminPrdList
+{
+ margin-left: 25px;
+ margin-right: 25px;
+ margin-top: 100px;
+ width:500px;
+ background-color:  #037c6e;
+}
+
+.adminHome
+{
+  margin-top: 100px;
+}
+.userbtn ,.adminAddPrd Button
+{
+  float: right;
+  margin: 20px;
+}
+
+Button  {
+  /* color: 	#386381!important; */
+  background-color:  	#144d79 !important;
+    
+   border-color:#084a75  !important
+ 
+}
+
+
+
+.adminAddPrd
+{
+  
+  margin-top: 100px;
+}
+/* .icon
+{
+  
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  
+} */
