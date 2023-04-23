@@ -75,8 +75,10 @@ export const login=({email,password}) => async dispatch =>
 {
         dispatch(loginStart());
           try{
+            debugger;
                const res = await API.post('/users/login',{email,password})
-                dispatch(loginSuccess(res.data.user));
+               
+                dispatch(loginSuccess(res.data));               
                 // alert(res.data.user);
                 // localStorage.setItem("login", JSON.stringify({
                 //     userLogin:true,

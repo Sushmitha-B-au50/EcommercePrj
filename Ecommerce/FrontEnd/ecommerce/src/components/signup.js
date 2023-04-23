@@ -92,23 +92,9 @@ export default function Signup() {
     //     showInfoToastMessage(e); 
     //   })
     }
-
-
-         
     }
 
-    // const[state,setState] = useState({
-    //     ProductID: "",
-    //     ProductName:"",
-    //     ProductDetails:"",
-    //     Ratings:"",
-    //     Quantity:"",
-    //     Price:"",
-    //     Category:"",
-    //     ProductImage:""
-    // });
-    //const {ProductID,ProductName,ProductDetails,Ratings,Quantity,Price,Category,ProductImage} = state;
-    return (
+   return (
         <div>
              <Container className="signup">
                 <Row>

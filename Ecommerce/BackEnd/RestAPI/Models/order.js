@@ -18,10 +18,12 @@ const orderSchema  = new mongoose.Schema(
     {
         Name: String,
         Email: String,
-        Products:String,
+        Products:[{ prd:String,
+            qty:Number            
+        }],
         Address:String,
         PhoneNumber:Number,
-        Quantity:Number,
+        TotalQuantity:Number,
         Total:mongoose.Types.Decimal128
     }
 )

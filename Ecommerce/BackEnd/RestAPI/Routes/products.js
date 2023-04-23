@@ -44,6 +44,7 @@ router.post('/addPrd', async (req, res, next) => {   // to add the products  usi
             Ratings: result.Ratings,
             Quantity: result.Quantity,
             Price: result.Price,
+            Category:result.Category
         });
 
         const dataRes = await product.save();
@@ -85,6 +86,7 @@ router.put('/:id', async (req, res, next) => {  //to update product
         productToUpdate.ProductDetails = req.body.ProductDetails,
         productToUpdate.Quantity = req.body.Quantity,
         productToUpdate.Price = req.body.Price;
+        productToUpdate.productToUpdate = req.body.Category
 
         const dataRes = await productToUpdate.save();
             return res.status(200).json({

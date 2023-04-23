@@ -8,11 +8,11 @@ import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../Images/logo.PNG';
-import { useSelector } from 'react-redux';
 import '../App.css';
 import {logout} from '../actions/userActions';
-import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch,useSelector } from 'react-redux';
+
 
 
 export default function Navigation() {
@@ -20,7 +20,18 @@ export default function Navigation() {
   const [adminUser, setadminUser] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const {user} = useSelector((state) => state.userRed);
+   const {user} = useSelector((state) => state.userRed);
+  const cartItems = useSelector((state) => state.cartRed.cart);
+ debugger;
+//  console.log(cartItems , cartItems.cartQuantity.length)
+  // console.log(cartItems.product.length)
+  //const navigate = useNavigate();
+ console.log(cartItems);
+
+  const cart =() =>
+  {
+   navigate('/Cart');
+  }
  
 const isAdmin=() =>
 {
@@ -58,14 +69,16 @@ useEffect(()=>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               </Nav>
+        
             {user ? (
               <>
               <Link className="link" onClick={Logout}>Logout</Link>
               <div className="text-uppercase m-2" id="loginName">{user}</div></>
             ):   (<><Link className="link"  to="/login">Login</Link>
             <div className="text-uppercase m-2" id="loginName"></div></>)}
-            <FaShoppingCart size={35}/>
-            <p className="font-weight-bold">0</p>
+            <FaShoppingCart size={35} onClick={cart}/>
+            {(cartItems[0] && cartItems.length>0) ?
+            (<p className="font-weight-bold">{cartItems.length}</p>):<p className="font-weight-bold">0</p>}
             <HiMenu className="m-2" size={40} onClick={handleShow} />
             <Offcanvas  style={{backgroundColor:"#3d6a8b"}} className="text-white" show={show} onHide={handleClose} >
                 <Offcanvas.Header closeButton>

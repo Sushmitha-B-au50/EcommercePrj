@@ -69,7 +69,7 @@ router.post('/login', async (req, res, next) => {
          return res.status(400).json({message:"Invalid Password"});
        } 
        const token = jwt.sign({email:existingUser.email,id:existingUser._id},"test",{expiresIn:'1h'});
-       res.status(200).json({user:existingUser.name,message:"logged in"})
+       res.status(200).json({user:existingUser.name,message:"logged in",token:token,email:existingUser.email});
     }
     catch (err) {
         return res.status(500).json({

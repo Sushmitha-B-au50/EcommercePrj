@@ -1,6 +1,7 @@
 const bodyParser = require('body-parser');
  const productsRoutes = require('./RestAPI/Routes/products');
  const userRoutes = require('./RestAPI/Routes/users');
+ const orderRoutes = require('./RestAPI/Routes/orders');
 // const orderRoutes = require('./RestApi/Routes/orders');
 const express =  require ('express');
 // var session = require('express-session');
@@ -13,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/products',productsRoutes);
 app.use('/users',userRoutes);
-// app.use('/order',orderRoutes);
+app.use('/orders',orderRoutes);
 // app.use(express.static('Front-End'));
 // app.use(session({
 //     secret:'secret',

@@ -8,3 +8,6 @@ export const SIGNUP_FAIL ="SIGNUP_FAIL";
 export const GET_PRD ="GET_PRD";
 export const PRD_ADD ="PRD_ADD";
 export const PRD_Delete ="PRD_Delete";
+export const ADD_ITEM ="ADD_ITEM";
+export const DELETE_ITEM ="DELETE_ITEM";
+export const DECREASE_QTY ="DECREASE_QTY";

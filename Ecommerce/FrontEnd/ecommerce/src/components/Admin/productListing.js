@@ -1,7 +1,7 @@
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
-import React, {  useEffect, useState } from 'react';
+import React, {  useEffect } from 'react';
 import { useDispatch,useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash,faPenToSquare } from "@fortawesome/free-solid-svg-icons";
@@ -15,7 +15,6 @@ function AdminProductList() {
   
 useEffect(() =>
 {
-  debugger;
   dispatch(loadProducts());
 
 },[products]);

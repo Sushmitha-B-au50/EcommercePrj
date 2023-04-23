@@ -25,19 +25,31 @@ const DeleteProduct = () =>(
     });
     
 
-export const loadProducts=() => async dispatch =>
-{
-    debugger;
-        try{
-        const response = await API.get('/products/');
-        debugger;
-        dispatch(getProducts(response.data));
-        return response.data;
-        }
-    catch(err){
-                return err;
-                }
-}
+// export const loadProducts=() => async dispatch =>
+// {
+//     //debugger;
+//         try{
+//         const response = await API.get('/products/');
+//         //debugger;
+//         dispatch(getProducts(response.data));
+//         //return response.data;
+//         }
+//     catch(err){
+//                 return err;
+//                 }
+// }
+
+export const loadProducts = () => {
+    return async (dispatch) => {
+
+            debugger;
+            const response = await API.get('/products/');
+            //debugger;
+            dispatch(getProducts(response.data));
+          
+        
+    }
+  }
 
 export const addproduct=(prd) => async dispatch =>
 {
@@ -46,7 +58,7 @@ export const addproduct=(prd) => async dispatch =>
      try{
         const response = await API.post('/products/addPrd',prd);
         dispatch(AddProducts());
-        return response;
+        // return response;
      }
     catch(err){
                 return err;

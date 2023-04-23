@@ -8,11 +8,12 @@ background-color: #0b1335
 .Link{
   color:azure;
 }
-#tbl td{
- color:#319ce4;
- font-weight: bold;
+#tbl td, .Card.Text {
+ color:#319ce4  !important;
+ font-weight: bold !important;
  
 }
+
 .items
 {
   display: flex;
@@ -96,6 +97,27 @@ Table .adminPrdList
  width:500px;
  background-color:  #037c6e;
 }
+ Table.cart
+{
+  width:550px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ height: 750px;
+}
+.cartcontainer
+{
+  margin-top: 100px;
+  height: auto;
+  
+}
+
+.totalprice
+{
+  margin-left: 50%;
+  color:	#6aa4ce;
+  font-weight: bold;
+}
 
 .adminHome
 {
@@ -122,6 +144,9 @@ Button  {
   
   margin-top: 100px;
 }
+
+
+
 /* .icon
 {
   
