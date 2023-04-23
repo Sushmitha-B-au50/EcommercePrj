@@ -8,12 +8,20 @@ background-color: #0b1335
 .Link{
   color:azure;
 }
+<<<<<<< HEAD
 #tbl td, .Card.Text {
  color:#319ce4  !important;
  font-weight: bold !important;
  
 }
 
+=======
+#tbl td{
+ color:#319ce4;
+ font-weight: bold;
+ 
+}
+>>>>>>> d3ac1ef125df9d6cb008ac66d4c192a5688a26a4
 .items
 {
   display: flex;
@@ -97,6 +105,7 @@ Table .adminPrdList
  width:500px;
  background-color:  #037c6e;
 }
+<<<<<<< HEAD
  Table.cart
 {
   width:550px;
@@ -118,6 +127,8 @@ Table .adminPrdList
   color:	#6aa4ce;
   font-weight: bold;
 }
+=======
+>>>>>>> d3ac1ef125df9d6cb008ac66d4c192a5688a26a4
 
 .adminHome
 {
@@ -144,9 +155,12 @@ Button  {
   
   margin-top: 100px;
 }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> d3ac1ef125df9d6cb008ac66d4c192a5688a26a4
 /* .icon
 {
   
